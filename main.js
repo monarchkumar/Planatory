@@ -80,7 +80,7 @@ function renderFrame(){
     if(delT>delTsec){
       delTsec=Math.ceil(delT);    
     };
-    if (window.mobileCheck()) scene.meshes[1].rotation.y -=0.0006;
+    if (window.mobileCheck()) scene.meshes[1].rotation.y -=0.001;
     else scene.meshes[1].rotation.y -=0.0002; 
     scene.render();    
   });
